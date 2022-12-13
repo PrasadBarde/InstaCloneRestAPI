@@ -3,6 +3,7 @@ const express = require('express');
 const userRoutes = require("./src/routes/user-routes");
 const PostRoutes = require("./src/routes/posts-routes")
 // console.log(userRoutes);
+const uri= process.env.MONGODB_URI;
 const app =express();
 app.use(express.json())
 app.use("/api/user",userRoutes)  //http://localhost :3000/api/user/........
